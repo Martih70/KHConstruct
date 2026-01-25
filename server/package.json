@@ -11,6 +11,7 @@
     "type-check": "tsc --noEmit",
     "ralph": "node ralph.js",
     "git-diagnostic": "node /Users/martinhamp/herd/.diagnostic-tools/git-diagnostic.mjs",
+    "git-diagnostic": "node /Users/martinhamp/herd/.diagnostic-tools/git-diagnostic.mjs",
     "diagnostic": "node diagnostic.mjs"
   },
   "dependencies": {
