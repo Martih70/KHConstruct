@@ -1,6 +1,8 @@
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { config } from './config/index.js';
 import { initializeDatabase } from './database/connection.js';
 import { runMigrations } from './database/migrations.js';
@@ -78,6 +80,25 @@ app.use('/api/v1/projects', projectsRoutes);
 app.use('/api/v1/projects', projectEstimatesRoutes);
 app.use('/api/v1/estimate-templates', estimateTemplatesRoutes);
 app.use('/api/v1/bcis', bcisRoutes);
+
+// Serve static files from client build
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const clientDistPath = path.join(__dirname, '../../client/dist');
+app.use(express.static(clientDistPath));
+
+// SPA fallback: serve index.html for non-API routes
+app.get('*', (req: Request, res: Response) => {
+  // Don't redirect API calls
+  if (!req.path.startsWith('/api')) {
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  } else {
+    res.status(404).json({
+      success: false,
+      error: 'Route not found',
+      path: req.path,
+    });
+  }
+});
 
 // 404 handler
 app.use((req: Request, res: Response) => {

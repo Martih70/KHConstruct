@@ -829,3 +829,35 @@
 2026-01-31 14:13:31:1331 info: User logged out: admin
 2026-01-31 14:15:10:1510 info: User logged in: admin
 2026-01-31 14:15:10:1510 info: User logged in: admin
+2026-01-31 17:21:00:210 info: Database connection closed
+2026-01-31 17:21:01:211 info: Starting KHConstruct server...
+2026-01-31 17:21:01:211 info: Database initialized at /Users/martinhamp/Herd/QSCostingPro/server/database/khconstruct.db
+2026-01-31 17:21:01:211 info: Database initialized
+2026-01-31 17:21:01:211 info: All migrations completed successfully
+2026-01-31 17:21:01:211 info: Database migrations completed
+2026-01-31 17:21:01:211 info: Starting database seeding...
+2026-01-31 17:21:01:211 info: ✓ Standard UK costs already seeded
+2026-01-31 17:21:01:211 info: ✓ BCIS database already seeded
+2026-01-31 17:21:01:211 info: ✓ Spons database already seeded
+2026-01-31 17:21:01:211 info: ✓ Database seeding completed
+2026-01-31 17:21:01:211 info: Database seeding completed
+2026-01-31 17:21:01:211 info: ✓ Server running on http://localhost:3000
+2026-01-31 17:21:01:211 info: Environment: development
+2026-01-31 17:21:01:211 info: Frontend URL: http://localhost:5173
+2026-01-31 17:21:01:211 info: Press Ctrl+C to stop
+2026-01-31 17:21:05:215 info: Database connection closed
+2026-01-31 17:21:05:215 info: Starting KHConstruct server...
+2026-01-31 17:21:05:215 info: Database initialized at /Users/martinhamp/Herd/QSCostingPro/server/database/khconstruct.db
+2026-01-31 17:21:05:215 info: Database initialized
+2026-01-31 17:21:05:215 info: All migrations completed successfully
+2026-01-31 17:21:05:215 info: Database migrations completed
+2026-01-31 17:21:05:215 info: Starting database seeding...
+2026-01-31 17:21:05:215 info: ✓ Standard UK costs already seeded
+2026-01-31 17:21:05:215 info: ✓ BCIS database already seeded
+2026-01-31 17:21:05:215 info: ✓ Spons database already seeded
+2026-01-31 17:21:05:215 info: ✓ Database seeding completed
+2026-01-31 17:21:05:215 info: Database seeding completed
+2026-01-31 17:21:05:215 info: ✓ Server running on http://localhost:3000
+2026-01-31 17:21:05:215 info: Environment: development
+2026-01-31 17:21:05:215 info: Frontend URL: http://localhost:5173
+2026-01-31 17:21:05:215 info: Press Ctrl+C to stop
